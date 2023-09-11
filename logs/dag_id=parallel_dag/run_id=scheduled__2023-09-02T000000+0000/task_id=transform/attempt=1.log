@@ -1,0 +1,27 @@
+[2023-09-03T07:21:57.530+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: parallel_dag.transform scheduled__2023-09-02T00:00:00+00:00 [queued]>
+[2023-09-03T07:21:57.539+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: parallel_dag.transform scheduled__2023-09-02T00:00:00+00:00 [queued]>
+[2023-09-03T07:21:57.540+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-03T07:21:57.540+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-09-03T07:21:57.540+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-03T07:21:57.555+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): transform> on 2023-09-02 00:00:00+00:00
+[2023-09-03T07:21:57.559+0000] {standard_task_runner.py:55} INFO - Started process 8959 to run task
+[2023-09-03T07:21:57.562+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'parallel_dag', 'transform', 'scheduled__2023-09-02T00:00:00+00:00', '--job-id', '176', '--raw', '--subdir', 'DAGS_FOLDER/parallel_dag.py', '--cfg-path', '/tmp/tmpgroj6x20']
+[2023-09-03T07:21:57.563+0000] {standard_task_runner.py:83} INFO - Job 176: Subtask transform
+[2023-09-03T07:21:57.623+0000] {task_command.py:376} INFO - Running <TaskInstance: parallel_dag.transform scheduled__2023-09-02T00:00:00+00:00 [running]> on host 6f35104e1718
+[2023-09-03T07:21:57.693+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=parallel_dag
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2023-09-02T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-09-02T00:00:00+00:00
+[2023-09-03T07:21:57.694+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-09-03T07:21:57.695+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'sleep 1']
+[2023-09-03T07:21:57.704+0000] {subprocess.py:86} INFO - Output:
+[2023-09-03T07:21:58.708+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-09-03T07:21:58.749+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=parallel_dag, task_id=transform, execution_date=20230902T000000, start_date=20230903T072157, end_date=20230903T072158
+[2023-09-03T07:21:58.777+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-09-03T07:21:58.796+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

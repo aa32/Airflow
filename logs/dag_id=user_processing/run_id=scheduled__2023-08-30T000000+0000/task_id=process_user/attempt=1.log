@@ -1,0 +1,24 @@
+[2023-08-31T04:22:15.589+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: user_processing.process_user scheduled__2023-08-30T00:00:00+00:00 [queued]>
+[2023-08-31T04:22:15.601+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: user_processing.process_user scheduled__2023-08-30T00:00:00+00:00 [queued]>
+[2023-08-31T04:22:15.601+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-31T04:22:15.601+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-08-31T04:22:15.601+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-31T04:22:15.616+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): process_user> on 2023-08-30 00:00:00+00:00
+[2023-08-31T04:22:15.620+0000] {standard_task_runner.py:55} INFO - Started process 80 to run task
+[2023-08-31T04:22:15.624+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'user_processing', 'process_user', 'scheduled__2023-08-30T00:00:00+00:00', '--job-id', '136', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmp6u6zod_u']
+[2023-08-31T04:22:15.626+0000] {standard_task_runner.py:83} INFO - Job 136: Subtask process_user
+[2023-08-31T04:22:15.689+0000] {task_command.py:376} INFO - Running <TaskInstance: user_processing.process_user scheduled__2023-08-30T00:00:00+00:00 [running]> on host cc5748ccf2f9
+[2023-08-31T04:22:15.759+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=process_user
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-30T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-08-30T00:00:00+00:00
+[2023-08-31T04:22:15.771+0000] {logging_mixin.py:120} INFO - hello_{'results': [{'gender': 'female', 'name': {'title': 'Ms', 'first': 'Scarlett', 'last': 'Singh'}, 'location': {'street': {'number': 9797, 'name': 'Crawford Street'}, 'city': 'Whanganui', 'state': 'Tasman', 'country': 'New Zealand', 'postcode': 31021, 'coordinates': {'latitude': '50.8146', 'longitude': '64.4017'}, 'timezone': {'offset': '+5:00', 'description': 'Ekaterinburg, Islamabad, Karachi, Tashkent'}}, 'email': 'scarlett.singh@example.com', 'login': {'uuid': 'eabaf2fc-3f5a-46ab-b938-dc1d6e7452c1', 'username': 'orangesnake806', 'password': 'canon', 'salt': '7vNAOQ9L', 'md5': 'e79302d7cb1d66db3d437450a98eaa16', 'sha1': '940e2836a757d9c5001da4f70cca84ae24d721f9', 'sha256': '4dd765a3a812d16e6f8de2d50673684a85bd1c3fec59030372f860fad05d8364'}, 'dob': {'date': '1950-08-06T12:25:30.172Z', 'age': 73}, 'registered': {'date': '2018-09-10T15:36:14.171Z', 'age': 4}, 'phone': '(943)-317-1574', 'cell': '(412)-009-2491', 'id': {'name': '', 'value': None}, 'picture': {'large': 'https://randomuser.me/api/portraits/women/39.jpg', 'medium': 'https://randomuser.me/api/portraits/med/women/39.jpg', 'thumbnail': 'https://randomuser.me/api/portraits/thumb/women/39.jpg'}, 'nat': 'NZ'}], 'info': {'seed': 'f61b65f63e81fcf3', 'results': 1, 'page': 1, 'version': '1.4'}}
+[2023-08-31T04:22:15.779+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-08-31T04:22:15.791+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=user_processing, task_id=process_user, execution_date=20230830T000000, start_date=20230831T042215, end_date=20230831T042215
+[2023-08-31T04:22:15.835+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-08-31T04:22:15.862+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
